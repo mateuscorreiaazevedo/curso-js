@@ -4,7 +4,7 @@ const PEDIDOS = [
     {id: 202, nome: 'Marcos Azevedo', comida: 'x-tudo', bebida: 'suco de laranja'},
     {id: 023, nome: 'Clara Azevedo', comida: 'x-tudo', bebida: 'coca-cola'},
     {id: 104, nome: 'Kamilla Azevedo', comida: 'x-bacon', bebida: 'suco de uva'},
-    {id: 005, nome: 'Fulano de tal', comida: 'x-salada', bebida: 'suco detox'}
+    {id: 104, nome: 'Fulano de tal', comida: 'x-salada', bebida: 'suco detox'}
 ];
 
 PEDIDOS.map ( pedido => {
@@ -17,9 +17,16 @@ PEDIDOS.map ( pedido => {
 
 // FILTER
 let filtro = PEDIDOS.filter ( pedido => {
-    if (pedido.bebida == 'suco detox') {
-        return (pedido.bebida) = 'em falta no momento'
-    }
+    return (pedido.id) == 104
 })
 
-console.log(filtro)
+// console.log(filtro)
+
+// FIND
+
+let find = PEDIDOS.find ( pedido => {
+    return pedido.id == 104;
+})
+
+// console.log(find)
+
