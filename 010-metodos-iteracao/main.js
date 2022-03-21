@@ -1,8 +1,8 @@
 // MAP 
 const PEDIDOS = [
-    {id: 501, nome: 'Mateus Azevedo', comida: 'x-bacon', bebida: 'coca-cola'},
+    {id: 501, nome: 'Mateus Azevedo', comida: 'x-bacon', bebida: 'suco de laranja'},
     {id: 202, nome: 'Marcos Azevedo', comida: 'x-tudo', bebida: 'suco de laranja'},
-    {id: 023, nome: 'Clara Azevedo', comida: 'x-tudo', bebida: 'coca-cola'},
+    {id: 023, nome: 'Clara Azevedo', comida: 'x-tudo', bebida: 'suco'},
     {id: 104, nome: 'Kamilla Azevedo', comida: 'x-bacon', bebida: 'suco de uva'},
     {id: 104, nome: 'Fulano de tal', comida: 'x-salada', bebida: 'suco detox'}
 ];
@@ -29,4 +29,13 @@ let find = PEDIDOS.find ( pedido => {
 })
 
 // console.log(find)
+
+// EVERY - RETORNA UM VALOR BOOLEANO
+
+let every = PEDIDOS.every (pedido => {
+    let { bebida } = pedido
+    return bebida == 'suco';
+})
+
+// console.log(every)
 
