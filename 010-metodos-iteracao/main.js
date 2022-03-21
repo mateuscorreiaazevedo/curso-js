@@ -13,4 +13,13 @@ PEDIDOS.map ( pedido => {
     }
 })
 
-console.log(PEDIDOS);
+// console.log(PEDIDOS);
+
+// FILTER
+let filtro = PEDIDOS.filter ( pedido => {
+    if (pedido.bebida == 'suco detox') {
+        return (pedido.bebida) = 'em falta no momento'
+    }
+})
+
+console.log(filtro)
