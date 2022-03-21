@@ -39,3 +39,13 @@ let every = PEDIDOS.every (pedido => {
 
 // console.log(every)
 
+// SOME
+
+const SOME = PEDIDOS.some (pedido => {
+    let { comida } = pedido
+    return (comida) == 'x-salada'
+})
+
+// console.log(SOME)
+
+// REDUCE 
